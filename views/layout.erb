@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Bitmaker CRM</h1>
+    </header>
+      <nav>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/contacts">Contact List</a></li>
+        <li><a href="/about">About</a></li>
+      </nav>
+
+
+    <%= yield %>
+
+    <footer>
+      <li>&copy; Bitmaker 2018</li>
+      <li> | </li>
+      <li>Made with <span class="red">&hearts;</span> by <a href="http://benjaminhoppe.co">Benjamin Hoppe</a></li>
+    </footer>
+
+
+  </body>
+</html>

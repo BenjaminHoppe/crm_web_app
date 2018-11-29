@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h3>Here's the contact list</h3>
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>Note</th>
-      </tr>
+
+
+    <div class="list_count">
+      <h2>There are <span class="count_number"><%= @contacts.count %></span> contacts.</h2>
+    </div>
     <% @contacts.each do |contact| %>
-      <tr>
-        <td><%=contact.first_name%></td>
-        <td><%=contact.first_name%></td>
-        <td><%=contact.last_name%></td>
-        <td><%=contact.email%></td>
-        <td><%=contact.note%></td>
-      </tr>
+      <ul class="contact_list">
+        <li><h2><%=contact.first_name%> <%=contact.last_name%>( <%=contact.email%>)</h2>
+          <a href="#">Edit</a> | <a href="#">Delete</a>
+      </ul>
       <% end %>
-    </table>
-  </body>
-</html>

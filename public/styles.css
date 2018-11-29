@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+}
+
+.title {
+  height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  padding-top: 15px;
+}
+nav > li  {
+  background-color: #D3D3D3;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 800;
+  padding: 0 10px;
+  text-align: center;
+  display: block;
+  margin: 3px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+.list_count{
+  height: 30px;
+  width: 80%;
+  background-color: #FF806D;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: left;
+}
+.count_number {
+  border-bottom: 3px solid #0EE1D1;
+}
+
+.list_count > h2 {
+  text-align: left;
+}
+
+.contact_list > li {
+  height: 40px;
+  width: 80%;
+  background-color: #0EE1D1;
+  margin: 10px auto;
+  list-style-type: none;
+  padding: 20px;
+  text-align: left;
+}
+
+li > h2 {
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+.red {
+  color: #9C0B11;
+}
+footer {
+  background-color: black;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+footer > li {
+  display: inline-block;
+  padding-top: 12px;
+}

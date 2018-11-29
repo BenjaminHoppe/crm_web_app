@@ -1,7 +1,6 @@
 require_relative 'contact'
 require 'sinatra'
 
-
 get '/home' do
   erb :index
 end
@@ -9,6 +8,10 @@ end
 get '/contacts' do
   @contacts = Contact.all
   erb :contacts
+end
+
+get '/about' do
+  erb :about
 end
 
 after do

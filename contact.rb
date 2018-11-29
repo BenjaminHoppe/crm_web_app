@@ -25,37 +25,7 @@ at_exit do
   ActiveRecord::Base.connection.close
 end
 
-  # readers
 
-
-
-benjamin = Contact.create(
- first_name: "Benjamin",
- last_name:  "Hoppe",
- email:      "Benjamin@mail.com",
- note:       "He probally should be sleeping right now."
-)
-
-oliur = Contact.create(
- first_name: "Oliur",
- last_name:  "Rahman",
- email:      "Oliur@ultralinx.com",
- note:       "Amazing designer"
-)
-
-elon = Contact.create(
- first_name: "Elon",
- last_name:  "Musk",
- email:      "elonmusk@tesla.com",
- note:       "Genius Billionaire"
-)
-
-bruce = Contact.create(
- first_name: "Bruce",
- last_name:  "Wayne",
- email:      "bruce@wayneenterprises.com",
- note:       "Strangly into bats."
-)
 
 
 # class Contact
