@@ -1,11 +1,9 @@
-
-
     <div class="list_count">
-      <h2>There are <span class="count_number"><%= @contacts.count %></span> contacts.</h2>
+      <h2>There are <span class="count_number"><%= @contact.count %></span> contacts.</h2>
     </div>
-    <% @contacts.each do |contact| %>
+    <% @contact.each do |contact| %>
       <ul class="contact_list">
-        <li><h2><%=contact.first_name%> <%=contact.last_name%>( <%=contact.email%>)</h2>
+        <li><a href="/contacts/<%= contact.id %>"><h2><%=contact.first_name%> <%=contact.last_name%>( <%=contact.email%>)</h2></a>
           <a href="#">Edit</a> | <a href="#">Delete</a>
       </ul>
       <% end %>
